@@ -29,7 +29,7 @@ jobs:
       id: run
       env:
         INPUT_WHO_TO_GREET: Mona Lisa Octocat
-      run:
+      run: |
         docker run \
           --env INPUT_WHO_TO_GREET="${{ env.INPUT_WHO_TO_GREET }}" \
           --rm docker-test:local
